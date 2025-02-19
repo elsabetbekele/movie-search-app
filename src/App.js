@@ -7,7 +7,8 @@ import axios from "axios";
 import Result from "./Result";
 import Detail from "./Detail";
 
-const API_KEY = "4eb9acf08776c2f1d6afb1204b944737";
+
+const API_KEY = process.env.REACT_APP_API_KEY;
 const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=`;
 
 function App() {
